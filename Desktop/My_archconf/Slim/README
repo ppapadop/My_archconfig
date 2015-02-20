@@ -1,0 +1,20 @@
+
+sudo cp slim.conf /etc/
+
+#########################################################################################
+#------------------------------------Instructions---------------------------------------#					
+#																						#
+#  sudo pacman -S slim																	#
+#  sudo pacman -S slim-themes															#
+#  sudo pacman -S archlinux-themes-slim													#
+#  replace at slim.conf the line "mate-session" with your Desktop Enviroment			#			
+#  sudo systemctl enable slim.service													#
+#																						#
+#	#Themes location 																	#
+#	/usr/share/slim/themes/																#
+#																						#
+#	#Themes preview																		#
+#	slim -p theme_name																	#
+#																						#
+#########################################################################################
+

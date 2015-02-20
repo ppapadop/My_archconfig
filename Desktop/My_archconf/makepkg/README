@@ -1,0 +1,14 @@
+
+sudo cp makepkg.conf /etc/
+
+#########################################################################################
+#------------------------------------CHANGES--------------------------------------------#					#																						#
+#																						#
+#  CFLAGS="-march=corei7-avx -O2 ..." //(=corei7 gia to desktop) delete to -mtune=....  #
+#									  // more CPUs at wiki.gentoo.org/wiki/Safe_CFLAGS  #
+#																						#
+#  #-- Specify a directory for package building.										#
+#  BUILDDIR=/dev/shm/makepkg // kanei build to package stin RAM							#
+#																						#
+#########################################################################################
+

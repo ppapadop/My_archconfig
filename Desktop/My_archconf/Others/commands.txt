@@ -1,0 +1,89 @@
+sudo pacman				# arch package manager
+	-S	<pkg_name>		# install
+	-Ss	<pkg_name>		# search
+	-Syu				# update all packages (not aur) --> (system update)
+	-Syy				# force check updates
+	-Syyu				# force check and install updates
+	-R	<pkg_name>		# remove package
+	-Rs 	<pkg_name>		# remove package and its dependencies which are not required 						  by any other installed package
+	-Qs	<pkg_name>		# search in the installed
+	-U	<pkg_name>		# install a package after downloading from AUR and 
+					# "makepkg -s" (makepkg -s WITHOUT sudo)
+	-Sc				# remove all the cached packages that are not currently 					  installed
+	-Scc				# completely empty the cached packages folder 
+					  (not recommended) 
+	-Sw				# download a package without installing it 				  
+
+------------------------------------------------------------------------------
+yaourt 					# aur packages (NOT sudo!!!)
+	<pkg_name>			# search package --> select and install
+	-Syua				# all system + aur packages update
+	-Su				# update all AUR packages
+	-R				# remove aur package
+	-Si				# display packages’ informations
+	-Sc				# remove old packages from cache
+	
+	
+
+
+------------------------------------------------------------------------------
+NVIDIA
+	Settings: 			optirun -b none nvidia-settings -c :8
+	Enable : 			optirun [options] application [application-parameters]
+	Better Performance: 		primusrun application
+	Wine: 				optirun wine windows application.exe
+	Test 1: 			optirun glxgears -info 
+	Test 2:				primusrun glxgear
+
+
+------------------------------------------------------------------------------
+tar -zxvf name.tar.gz			# untar
+tar -zcvf my_name.tar.gz <name>		# tar	(v: log messages)
+
+unzip	name.zip			# unzip
+unrar 	x 	name.rar		# unrar
+bzip2	-d	<name>.bzip2		# unzip
+bzip2	--help				# help
+
+
+-------------------------------------------------------------------------------
+systemctl
+	list-units --type=service		# list active services
+	list-units --type=service --all	# list all services
+	stop	<name>.service			# stops for this session
+	start	<name>.service			# start for this session
+	disable	<name>.service			# stop for ever
+	enable	<name>.service			# start for ever
+	------	<name>@<something>.service	#start on <something>
+	
+	
+--------------------------------------------------------------------------------
+Othes:
+	sudo fstrim -v /		# Manual SSD TRIM
+	
+	fdisk -l			# Show USB divices
+	
+	tmux 				# Virtual terminal multiplexer
+	
+	qemu				# System Emulator
+	
+	pwd				# Show directory path
+	
+	whoneeds package_name		# List of all the packages depending on an installed package
+	-Rs package_name
+	
+	
+	teamviewer: 			sudo systemctl start teamviewerd
+					teamviewer
+			
+	metasploit:			sudo armitage
+					cd /usr/share/metasploit
+					sudo msfconsole
+	
+	search app:			whereis app_name
+					locate	app_name
+					
+	
+			
+	
+			

@@ -1,0 +1,13 @@
+1)Write Arch to USB with: 
+  a)"sudo dd bs=4M if=/path/to/archlinux.iso of=/dev/sdX && sync" for Linux //(e.x sdX=sdc)	or
+  b) Win32DiskImage for Windows and write img
+
+2)Restore USB:
+  a) sudo dd count=1 bs=512 if=/dev/zero of=/dev/sdX && sync  //e.x sdX=sdc
+  b) from Terminal:
+	# cfdisk /dev/sdX
+	# mkfs.vfat -F32 /dev/sdX1
+	# dosfslabel /dev/sdX1 USB_NAME
+  c) or from gparted:
+	1) create a new partition table and 
+  	2) format at FAT32 or NTFS
